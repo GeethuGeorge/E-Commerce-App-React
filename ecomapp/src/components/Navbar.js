@@ -43,9 +43,10 @@ const Input = styled.input`
     border: none;
 `;
 //styled component-9
-const Logo = styled.h1`
+/* const Logo = styled.h1`
     font-weight: bold;
-`;
+    font-size:60px;
+`; */
 
 // Styled component-4
 const Center = styled.div`
@@ -68,6 +69,11 @@ const MenuItem = styled.div`
     margin-left:25px;
 `;
 
+const Image=styled.img`
+width:200px;
+font-weight:bold;
+`
+
 const Navbar = () => {
     return (
         <Container>
@@ -80,7 +86,9 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>LUXE</Logo>
+               {/*  <Logo>LUXE</Logo> */}
+                    <Image src="/images/logo.png"/>
+                   
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>

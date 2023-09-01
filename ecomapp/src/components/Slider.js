@@ -9,7 +9,7 @@ const Container=styled.div`
 width:100%;
 height: 100vh;
 display: flex;
-margin-top:25px;
+margin-top:90px;
 position: relative;
  
 `;
@@ -49,9 +49,9 @@ width:100vw;
 height:100vh;
 display:flex;
 align-items:center;
-/* background-color: #${(props)=>{
+/* /* background-color: #${(props)=>{
   return props.bg
-}}
+}} */
 `
 const ImgContainer=styled.div`
 height: 100%;
@@ -103,7 +103,7 @@ const Slider = () => {
       <Wrapper slideIndex={slideIndex}>
 {
   sliderItems.map((item)=>(
-    <Slide bg={item.bg}>
+    <Slide bg={item.bg} key={item.id}>
          <ImgContainer>
          <Image src={item.img} alt="Product 1" />
          </ImgContainer>
