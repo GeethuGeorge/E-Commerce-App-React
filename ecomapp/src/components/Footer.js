@@ -8,12 +8,12 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
-
+import {mobile} from "../Responsive";
 
 const Container = styled.div`
-display :flex;
+  display: flex;
+  ${mobile({ flexDirection: "column" })}
 `;
-
 
 const Left = styled.div`
     flex: 1;
@@ -22,9 +22,9 @@ const Left = styled.div`
     padding: 20px;
 `;
 const Center = styled.div`
-    flex: 1;
-    padding: 20px;
-    margin-top:10px;
+  flex: 1;
+  padding: 20px;
+  ${mobile({ display: "none" })}
 `;
 
 const Title = styled.h3`
@@ -77,8 +77,9 @@ const SocialIcon = styled.div`
 `;
 
 const Right = styled.div`
-margin-top:20px;
-    flex: 1;
+  flex: 1;
+  padding: 20px;
+  ${mobile({ backgroundColor: "#fff8f8" })}
 `;
 
 const ContactItem=styled.div`
